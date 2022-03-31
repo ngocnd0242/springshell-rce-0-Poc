@@ -1,6 +1,8 @@
 # How to reproduce
 ./mvnw clean package
 
+docker-compose down --rmi all
+
 docker-compose up --build
 
 python3 exp.py --url http://localhost:8080/springshell/greeting
